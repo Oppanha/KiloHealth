@@ -62,7 +62,9 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 //Search
-                XSearch(() {}),
+                XSearch(() {
+                  Get.toNamed(Routes.searchScreen);
+                }),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,

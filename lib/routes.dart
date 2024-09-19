@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:kilo_health/components/XGridItem.dart';
 import 'package:kilo_health/dashboard/dashboard.dart';
 import 'package:kilo_health/home/Detail/detailScreen.dart';
+import 'package:kilo_health/home/Search/searchScreen.dart';
 import 'package:kilo_health/home/homeScreen.dart';
 import 'package:kilo_health/message/messageScreen.dart';
 import 'package:kilo_health/notification/notificationScreen.dart';
@@ -18,6 +18,7 @@ class Routes {
   static const String messageScreen = "/messageScreen";
   static const String profileScreen = "/profileScreen";
   static const String detailScreen = "/detailScreen";
+  static const String searchScreen = "/searchScreen";
 }
 
 final getPage = [
@@ -28,4 +29,5 @@ final getPage = [
   GetPage(name: Routes.notificationScreen, page: () => NotificationScreen()),
   GetPage(name: Routes.profileScreen, page: () => ProfileScreen()),
   GetPage(name: Routes.detailScreen, page: () => DetailScreen()),
+  GetPage(name: Routes.searchScreen, page: () => SearchScreen()),
 ];
